@@ -1,12 +1,110 @@
 <div class='container text-center mb-5'> <!-- EVENT DETAILS -->
-  <h1 id="marty" class='display-1 mt-5'>{{event.eventName}}</h1>
-  <p class='lead'>{{event.location}}</p>
-  <p class='lead'>Host: {{event._user.username}}</p>
-  <h4 class='display-5 mb-3'>{{event.date | date:'medium'}}</h4>
-  <p class='lead'>Current User: <span id="currentUser" style="color:red">{{currentUser.username}}</span></p>
+  <h1 id="marty" class='display-1 mt-5 shadow'>{{event.eventName}}</h1>
+  <p class='lead shadow'>{{event.location}}</p>
+  <p class='lead shadow'>Host: {{event._user.username}}</p>
+  <h4 class='display-5 mb-3 shadow'>{{event.date | date:'medium'}}</h4>
+  <p class='lead shadow'>Current User: <span id="currentUser" style="color:red">{{currentUser.username}}</span></p>
   Status: <select id="selectStatus" class="custom-select" id="inputGroupSelect02" style="">
     <option value="maybe">MAYBE</option>
     <option value="going">GOING</option>
     <option value="notGoing">NOT GOING</option>
   </select>
 </div><!-- /EVENT DETAILS -->
+
+<div class="container"> <!-- MAIN CONTAINERS -->
+
+
+<div class="row">
+  <div class="col-sm-4" style="background-color: white; border: solid 1px grey">
+      <div class="card"> 
+        <div id="guestList" class="card-body">
+          <h5 class="card-title">Guest List</h5>
+          <ul class="list-group list-scroll">
+            <li class="list-group-item">Guest 1</li>
+            <li class="list-group-item">Guest 2</li>
+            <li class="list-group-item">Guest 3</li>
+          </ul> <!-- guestlist will load here --> 
+        </div>
+        <div class="card-footer bg-white border-white"> <!-- ADD GUEST FORM -->
+          <form>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <input id="newGuestName" class="form-control" placeholder="New Guest" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <button id="addNewGuest" type="button" class="btn btn-primary btn-md btn-block info">ADD</button>
+                </div>
+              </div>   
+            </form>  
+        </div><!-- /ADD GUEST FORM -->
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div> 
+  </div>
+    <div class="col-sm-4" style="background-color: white; border: solid 1px silver">
+      <div class="card"> 
+        <div id="guestList" class="card-body">
+          <h5 class="card-title">Item List</h5>
+          <ul class="list-group list-scroll">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+          </ul> <!-- guestlist will load here --> 
+        </div>
+        <div class="card-footer bg-white border-white"> <!-- ADD GUEST FORM -->
+          <form>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <input id="newGuestName" class="form-control" placeholder="New Item" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <button id="addNewGuest" type="button" class="btn btn-primary btn-md btn-block info">ADD</button>
+                </div>
+              </div>   
+            </form>  
+        </div><!-- /ADD GUEST FORM -->
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div> 
+    </div>
+    <div class="col-sm-4" style="background-color: white; border: solid 1px grey">
+      <div class="card"> 
+        <div id="guestList" class="card-body">
+          <h5 class="card-title">Bringer List</h5>
+          <ul class="list-group list-scroll">
+            <li class="list-group-item">Bringer 1</li>
+            <li class="list-group-item">Bringer 2</li>
+            <li class="list-group-item">Bringer 3</li>
+          </ul> <!-- guestlist will load here --> 
+        </div>
+        <div class="card-footer bg-white border-white"> <!-- ADD GUEST FORM -->
+          <form>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <input id="newGuestName" class="form-control" placeholder="New Bringer" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-13">
+                  <button id="addNewGuest" type="button" class="btn btn-primary btn-md btn-block info">ADD</button>
+                </div>
+              </div>   
+            </form>  
+        </div><!-- /ADD GUEST FORM -->
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div> 
+    </div>
+</div>
+
+  
+
+    
+</div>

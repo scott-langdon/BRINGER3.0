@@ -110,7 +110,9 @@ body {
     color: black;
   }
 
-
+.shadow {
+    text-shadow: 2px 2px 9px lightgrey;
+}
 
 
 

@@ -11,8 +11,14 @@
   "author": "Scott Langdon",
   "license": "ISC",
   "dependencies": {
+    "@angular/animations": "^5.2.9",
+    "@angular/cdk": "^5.2.4",
     "@angular/cli": "^1.7.3",
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
     "@angular/compiler-cli": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/material": "^5.2.4",
     "angular": "^1.6.9",
     "angular-animate": "^1.5.3",
     "angular-datetime-input": "^5.2.1",
@@ -24,6 +30,7 @@
     "express-session": "^1.14.1",
     "jquery": "^1.12.4",
     "mongoose": "^4.6.1",
-    "popper.js": "^1.14.1"
+    "popper.js": "^1.14.1",
+    "zone.js": "^0.8.26"
   }
 }
